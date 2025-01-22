@@ -93,7 +93,26 @@ const Navbar = () => {
             >
               Projects
             </Button>
-
+            <Button
+              component={NavLink}
+              to="/skills"
+              sx={{
+                color: theme.palette.text.navText,
+                textTransform: 'none',
+                borderBottom: `2px solid transparent`,
+                fontWeight: 'bold',
+                '&.active': {
+                  borderBottom: `2px solid ${theme.palette.highlight}`,
+                  color: theme.palette.highlight,
+                },
+                '&:hover': {
+                  borderBottom: `2px solid ${theme.palette.highlight}`,
+                  color: theme.palette.highlight,
+                },
+              }}
+            >
+              Skills
+            </Button>
             <Button
               component={NavLink}
               to="/contact"
@@ -165,7 +184,21 @@ const Navbar = () => {
           >
             Projects
           </Button>
-
+          <Button
+            component={NavLink}
+            to="/skills"
+            sx={{
+              color: theme.palette.text.navText,
+              textTransform: 'none',
+              fontWeight: 'bold',
+              '&.active': {
+                color: theme.palette.highlight,
+              },
+            }}
+            onClick={toggleDrawer}
+          >
+            Skills
+          </Button>
           <Button
             component={NavLink}
             to="/contact"

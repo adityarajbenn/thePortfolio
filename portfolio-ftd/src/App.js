@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import baseTheme from './theme';
 import { CssBaseline, Box, Container } from '@mui/material';
+import Skills from './pages/Skills';
 
 const App = () => {
   const [currentTheme, setCurrentTheme] = useState(baseTheme.primary);
@@ -47,7 +48,7 @@ const App = () => {
               minHeight: '100vh',
               display: 'flex',
               flexDirection: 'column',
-              marginTop: '100px',
+              marginTop: '80px',
             }}
           >
             <ScrollToTop />
@@ -55,6 +56,7 @@ const App = () => {
               <Route path="/" element={<Home />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/skills" element={<Skills />} />
             </Routes>
           </Container>
           <Footer />
