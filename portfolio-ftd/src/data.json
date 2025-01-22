@@ -38,6 +38,15 @@
     ],
     "projects": [
       {
+        "name": "Psycology Booking",
+        "description": "A website so show the details of the service offered and also book the slot for appointment.",
+        "technologies": ["React", "Node.js", "MongoDB"],
+        "contribution": "Made the complete website from scratch",
+        "github": "https://github.com/adityarajbenn/lovoda-clone",
+        "demo": "https://lovoda-clone-demo.com",
+        "image": "https://via.placeholder.com/400x200"
+      },
+      {
         "name": "Clone of FirstCry.com",
         "description": "E-commerce website for baby products. Built the Product and Payment completion pages using HTML, CSS, and JavaScript.",
         "technologies": ["React", "Material-UI", "Framer Motion"],
