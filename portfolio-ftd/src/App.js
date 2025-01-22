@@ -25,11 +25,12 @@ const App = () => {
 
   const ScrollToTop = () => {
     const location = useLocation();
-  
+
     useEffect(() => {
+      // Ensure the scroll happens only when the location changes
       window.scrollTo(0, 0);
-    }, [location]);
-  
+    }, [location]); // Runs only when location (route) changes
+
     return null;
   };
 
@@ -37,18 +38,26 @@ const App = () => {
     <ThemeProvider theme={currentTheme}>
       <CssBaseline /> {/* Resets CSS styles and applies default styles */}
       <Router>
-      <ScrollToTop />
         <Box sx={{ backgroundColor: currentTheme.background, minHeight: '100vh' }}>
           <Navbar />
           <ThemeSwitcher handleThemeSwitch={handleThemeSwitch} />
-          <Container maxWidth="md" sx={{ minHeight: '100vh', display: 'flex', flexDirection: 'column',marginTop:'100px' }}>
+          <Container
+            maxWidth="md"
+            sx={{
+              minHeight: '100vh',
+              display: 'flex',
+              flexDirection: 'column',
+              marginTop: '100px',
+            }}
+          >
+            <ScrollToTop />
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </Container>
-            <Footer />
+          <Footer />
         </Box>
       </Router>
     </ThemeProvider>

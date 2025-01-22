@@ -16,7 +16,7 @@ const Footer = () => {
     >
       <Typography
         variant="body2"
-        sx={{ color: theme.palette.text.primary }} // Ensure text is readable
+        sx={{ color: theme.palette.text.navText }} // Ensure text is readable
       >
         © 2025 Aditya Raj Benn. All rights reserved.
       </Typography>

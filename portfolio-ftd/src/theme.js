@@ -1,14 +1,14 @@
 import { createTheme } from '@mui/material/styles';
 
 const primaryPalette = {
-    main: "#ED4059", // Pink (kept as it is, vibrant and bold)
-    secondary: "#375BE7", // Adjusted Blue for better pairing with Pink
-    background: "#FAF3B0", // Soft Yellow for a fresh and clean look
-    text: "#333333", // Darker Gray for readability (new for normal text)
-    navText: "#FFFFFF", // White (kept for navbar)
-    headingText: "#4A4A4A", // Slightly darker gray for headings
-    highlight: "#4DCFFF", // Slightly richer Light Blue for better vibrancy
-  };
+  main: "#39796B", // Richer Teal for elegance
+  secondary: "#A8DADC", // Muted Light Cyan for a cohesive look
+  background: "#F4F4F4", // Very Light Gray for a neutral background
+  text: "#285E61", // Deepened Aqua Blue for normal text
+  navText: "#FFFFFF", // White (kept for navbar)
+  headingText: "#1B4D3E", // Darker Aqua for heading text
+  highlight: "#52C571", // Brighter Green for a fresh pop
+};
   
   const secondaryPalette = {
     main: "#F5A623", // Brighter Orange for warmth
@@ -21,16 +21,14 @@ const primaryPalette = {
   };
   
   const tertiaryPalette = {
-    main: "#39796B", // Richer Teal for elegance
-    secondary: "#A8DADC", // Muted Light Cyan for a cohesive look
-    background: "#F4F4F4", // Very Light Gray for a neutral background
-    text: "#285E61", // Deepened Aqua Blue for normal text
+    main: "#ED4059", // Pink (kept as it is, vibrant and bold)
+    secondary: "#375BE7", // Adjusted Blue for better pairing with Pink
+    background: "#FAF3B0", // Soft Yellow for a fresh and clean look
+    text: "#333333", // Darker Gray for readability (new for normal text)
     navText: "#FFFFFF", // White (kept for navbar)
-    headingText: "#1B4D3E", // Darker Aqua for heading text
-    highlight: "#52C571", // Brighter Green for a fresh pop
+    headingText: "#4A4A4A", // Slightly darker gray for headings
+    highlight: "#4DCFFF", // Slightly richer Light Blue for better vibrancy
   };
-  
-  
 
 const baseTheme = {
   primary: createTheme({
