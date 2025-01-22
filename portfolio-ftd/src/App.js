@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { ThemeProvider } from '@mui/material/styles';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
@@ -23,10 +23,21 @@ const App = () => {
     }
   };
 
+  const ScrollToTop = () => {
+    const location = useLocation();
+  
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [location]);
+  
+    return null;
+  };
+
   return (
     <ThemeProvider theme={currentTheme}>
       <CssBaseline /> {/* Resets CSS styles and applies default styles */}
       <Router>
+      <ScrollToTop />
         <Box sx={{ backgroundColor: currentTheme.background, minHeight: '100vh' }}>
           <Navbar />
           <ThemeSwitcher handleThemeSwitch={handleThemeSwitch} />
