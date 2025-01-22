@@ -21,22 +21,23 @@ const Navbar = () => {
         boxShadow: 'none',
       }}
     >
-      <Toolbar>
+      <Toolbar sx={{display:'flex',justifyContent:'space-between'}}>
         {/* Logo/Title */}
+        <Box>
         <Typography
           variant="h6"
           component="div"
           sx={{
             flexGrow: 1,
-            fontSize: '18px',
+            fontSize: '16px',
             fontWeight: 800,
             color: theme.palette.text.navText,
           }}
         >
-          Aditya Raj Benn <br />
-          <span style={{ fontWeight: 300, fontSize: '14px' }}>Software Engineer</span>
+          Aditya Raj Benn
         </Typography>
-
+        <Typography style={{ fontWeight: 300, fontSize: '13px',color: theme.palette.text.navText, }}>Software Engineer</Typography>
+        </Box>
         {/* Mobile Hamburger Icon */}
         {isMobile && (
           <IconButton
