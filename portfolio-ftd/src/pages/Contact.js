@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Typography, Grid, TextField, Button, Box, List, ListItem, ListItemIcon } from '@mui/material';
+import { Container, Typography, TextField, Button, Box, List, ListItem, ListItemIcon } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import portfolioData from '../data.json';
