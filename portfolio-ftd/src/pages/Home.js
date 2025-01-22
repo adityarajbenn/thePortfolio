@@ -1,22 +1,23 @@
 import React from 'react';
-import { Container, Typography, Button, Grid, Box, Avatar } from '@mui/material';
+import { Container, Typography, Grid, Box, Avatar, IconButton } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
+import { GitHub, LinkedIn, Email } from '@mui/icons-material'; // Import required icons
 import data from '../data.json';
-import profileImage from '../images/profileImage.jpg'
+import profileImage from '../images/profileImage.jpg';
 
 const Home = () => {
   const theme = useTheme();
 
   return (
-    <Box 
-      sx={{ 
-        minHeight: '100vh', 
-        backgroundColor: theme.palette.background.default, 
-        display: 'flex', 
-        flexDirection: 'column', 
+    <Box
+      sx={{
+        minHeight: '100vh',
+        backgroundColor: theme.palette.background.default,
+        display: 'flex',
+        flexDirection: 'column',
         justifyContent: 'center',
-        alignItems: 'center', 
-        py: 8 
+        alignItems: 'center',
+        py: 8,
       }}
     >
       <Container maxWidth="md" sx={{ textAlign: 'center' }}>
@@ -28,46 +29,70 @@ const Home = () => {
         />
 
         {/* Welcome Section */}
-        <Typography 
-          variant="h3" 
-          sx={{ marginBottom: 2, color: theme.palette.text.primary, fontWeight: 600 }}
+        <Typography
+          variant="h3"
+          sx={{
+            marginBottom: 2,
+            color: theme.palette.text.primary,
+            fontWeight: 600,
+          }}
         >
           Welcome to {data.aboutMe.name}'s Portfolio
         </Typography>
-        <Typography 
-          variant="h5" 
-          sx={{ marginBottom: 3, color: theme.palette.text.secondary, fontStyle: 'italic' }}
+        <Typography
+          variant="h5"
+          sx={{
+            marginBottom: 3,
+            color: theme.palette.text.secondary,
+            fontStyle: 'italic',
+          }}
         >
           {data.aboutMe.title}
         </Typography>
-        <Typography 
-          variant="body1" 
-          sx={{ marginBottom: 4, color: theme.palette.text.primary }}
+        <Typography
+          variant="body1"
+          sx={{
+            marginBottom: 4,
+            color: theme.palette.text.primary,
+          }}
         >
           {data.aboutMe.description}
         </Typography>
 
-        {/* Call-to-Action Buttons */}
-        <Grid container spacing={2} justifyContent="center">
+        {/* Icons for Contact, GitHub, and LinkedIn */}
+        <Grid container spacing={3} justifyContent="center">
           <Grid item>
-            <Button 
-              variant="contained" 
-              color="primary" 
+            <IconButton
               href={`mailto:${data.contact.email}`}
+              color="primary"
               size="large"
             >
-              Contact Me
-            </Button>
+              <Email />
+            </IconButton>
           </Grid>
           <Grid item>
-            <Button 
-              variant="outlined" 
-              color="secondary" 
+            <IconButton
               href={data.contact.github}
+              color="secondary"
               size="large"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              GitHub
-            </Button>
+              <GitHub />
+            </IconButton>
+          </Grid>
+          <Grid item>
+            <IconButton
+              href={data.contact.linkedin}
+              sx={{
+                color: theme.palette.info.main, // Custom color for LinkedIn
+              }}
+              size="large"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkedIn />
+            </IconButton>
           </Grid>
         </Grid>
       </Container>
