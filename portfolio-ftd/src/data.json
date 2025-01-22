@@ -40,14 +40,20 @@
       {
         "name": "Clone of FirstCry.com",
         "description": "E-commerce website for baby products. Built the Product and Payment completion pages using HTML, CSS, and JavaScript.",
+        "technologies": ["React", "Material-UI", "Framer Motion"],
+        "contribution": "Designed and developed the entire frontend.",
         "github": "https://github.com/adityarajbenn/firstcry-clone",
-        "demo": "https://firstcry-clone-demo.com"
+        "demo": "https://firstcry-clone-demo.com",
+        "image": "https://via.placeholder.com/400x200"
       },
       {
         "name": "Clone of Lovoda.com",
         "description": "E-commerce store for jewelry and accessories. Developed the Home page and styled the Cart page using HTML, CSS, and JavaScript.",
+        "technologies": ["React", "Node.js", "MongoDB"],
+        "contribution": "Implemented product listing and payment integration.",
         "github": "https://github.com/adityarajbenn/lovoda-clone",
-        "demo": "https://lovoda-clone-demo.com"
+        "demo": "https://lovoda-clone-demo.com",
+        "image": "https://via.placeholder.com/400x200"
       }
     ],
     "skills": [
