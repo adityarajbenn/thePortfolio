@@ -80,7 +80,7 @@ const Skills = () => {
         sx={{
           color: theme.palette.text.primary,
           fontWeight: "bold",
-          marginTop: 8,
+          // marginTop: 8,
           marginBottom: 4,
         }}
       >
