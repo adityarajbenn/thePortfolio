@@ -1,7 +1,7 @@
 [build]
-command = "npm run build"  # Remove "CI=false" unless necessary for your build setup
+command = "npm run build" 
 publish = "build"
-base = "portfolio-ftd"  # Ensure the folder name matches your project directory structure
+base = "portfolio-ftd"
 
 [[redirects]]
 from = "/*"
