@@ -86,7 +86,7 @@ const Skills = () => {
       >
         {title}
       </Typography>
-      <Grid container spacing={4} justifyContent="center">
+      <Grid container spacing={4} justifyContent="center" marginBottom='20px'>
         {items.map((item, index) => (
           <Grid
             item
