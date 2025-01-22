@@ -42,10 +42,14 @@ const Projects = () => {
           <Box
             key={index}
             component={motion.div}
-            initial={{ x: index % 2 === 0 ? "100%" : "-100%", opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ opacity: 0, y: 30 }}  // Animate only opacity and vertical position
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: index * 0.2 }}
+            transition={{
+              opacity: { duration: 1, ease: "easeOut" },
+              y: { duration: 1, ease: "easeOut" },
+              delay: index * 0.2,
+            }}
             sx={{
               display: "flex",
               flexDirection: {
@@ -55,6 +59,7 @@ const Projects = () => {
               alignItems: "center",
               marginBottom: 6,
               width: "100%",
+              position: "relative",  // Ensure no layout disruption
             }}
           >
             {/* Project content */}
@@ -65,6 +70,8 @@ const Projects = () => {
                 marginRight: { xs: 0, md: 2 },
                 backgroundColor: theme.palette.background.paper,
                 boxShadow: 3,
+                opacity: 1,  // Ensure it's visible when animation completes
+                transition: "opacity 0.6s ease-out",  // Smooth opacity transition
               }}
             >
               <CardMedia
