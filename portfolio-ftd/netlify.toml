@@ -1,2 +1,9 @@
 [build]
-  publish = "portfolio-ftd"
+command = "npm run build"  # Remove "CI=false" unless necessary for your build setup
+publish = "build"
+base = "portfolio-ftd"  # Ensure the folder name matches your project directory structure
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
