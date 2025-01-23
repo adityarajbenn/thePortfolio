@@ -38,31 +38,40 @@
     ],
     "projects": [
       {
-        "name": "Psycology Booking",
-        "description": "A website so show the details of the service offered and also book the slot for appointment.",
-        "technologies": ["React", "Node.js", "MongoDB"],
-        "contribution": "Made the complete website from scratch",
-        "github": "https://github.com/adityarajbenn/lovoda-clone",
-        "demo": "https://lovoda-clone-demo.com",
-        "image": "https://via.placeholder.com/400x200"
+        "name": "PsyConnect, (Jan 2025 - Fully Responsive)",
+        "description": "A psychologist's slot booking website that showcases her profile, expertise, and services, enabling users to seamlessly book sessions through an intuitive and responsive platform.",
+        "technologies": ["React", "Javascript", "Node.js", "MongoDB", "Netlify", "Render"],
+        "contribution": "Made the complete website from scratch in a week",
+        "github": "",
+        "demo": "https://ddobos.netlify.app/",
+        "image": "./images/dobosGIF.gif"
       },
       {
-        "name": "Clone of FirstCry.com",
+        "name": "Passion for Music, (Jan 2025 - Fully Responsive)" ,
+        "description": "A platform showcasing music classes, offerings, and rules. Users can explore details about the courses and book personalized slots based on their preferences.",
+        "technologies": ["React", "HTML", "CSS", "Javascript", "Netlify"],
+        "contribution": "Made the complete website from scratch",
+        "github": "https://github.com/adityarajbenn/passionformusic",
+        "demo": "https://passionformusic.netlify.app/",
+        "image": "./images/pfmGIF.gif"
+      },
+      {
+        "name": "Clone of FirstCry.com, (Jan 2023)",
         "description": "E-commerce website for baby products. Built the Product and Payment completion pages using HTML, CSS, and JavaScript.",
         "technologies": ["React", "Material-UI", "Framer Motion"],
-        "contribution": "Designed and developed the entire frontend.",
+        "contribution": "Designed and developed the entire frontend. Won 3rd prize in the batch.",
         "github": "https://github.com/adityarajbenn/firstcry-clone",
         "demo": "https://firstcry-clone-demo.com",
-        "image": "https://via.placeholder.com/400x200"
+        "image": "./images/firstCryGIF.gif"
       },
       {
-        "name": "Clone of Lovoda.com",
+        "name": "Clone of Lovoda.com, (Oct 2022)",
         "description": "E-commerce store for jewelry and accessories. Developed the Home page and styled the Cart page using HTML, CSS, and JavaScript.",
         "technologies": ["React", "Node.js", "MongoDB"],
-        "contribution": "Implemented product listing and payment integration.",
+        "contribution": "Implemented product listing and payment integration. Won 3rd prize in the batch.",
         "github": "https://github.com/adityarajbenn/lovoda-clone",
         "demo": "https://lovoda-clone-demo.com",
-        "image": "https://via.placeholder.com/400x200"
+        "image": "./images/lovodaGIF.gif"
       }
     ],
     "skills": [
