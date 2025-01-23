@@ -39,6 +39,15 @@
     ],
     "projects": [
       {
+        "name": "Portfolio (Jan 2025 - Fully Responsive)",
+        "description": "A personalized portfolio website showcasing my projects, skills, and experience. It includes sections for project details, a booking system for services, and interactive features like custom themes and a color switcher.",
+        "technologies": ["React", "MUI", "MongoDB", "Node.js", "Netlify", "GitHub"],
+        "contribution": "Developed and designed the entire portfolio website with responsive layout, custom color themes, and seamless user interaction.",
+        "github": "https://github.com/adityarajbenn/thePortfolio",
+        "demo": "https://adityarajbenn-portfolio.netlify.app/",
+        "image": "./images/portfolioGIF.gif"
+      },      
+      {
         "name": "PsyConnect, (Jan 2025 - Fully Responsive)",
         "description": "A psychologist's slot booking website that showcases her profile, expertise, and services, enabling users to seamlessly book sessions through an intuitive and responsive platform.",
         "technologies": ["React", "Javascript", "Node.js", "MongoDB", "Netlify", "Render"],
@@ -61,8 +70,8 @@
         "description": "E-commerce website for baby products. Built the Product and Payment completion pages using HTML, CSS, and JavaScript.",
         "technologies": ["React", "Material-UI", "Framer Motion"],
         "contribution": "Designed and developed the entire frontend. Won 3rd prize in the batch.",
-        "github": "https://github.com/adityarajbenn/firstcry-clone",
-        "demo": "https://firstcry-clone-demo.com",
+        "github": "https://github.com/adityarajbenn/firstCry",
+        "demo": "https://firstcry-clone.netlify.app/",
         "image": "./images/firstCryGIF.gif"
       },
       {
@@ -70,8 +79,8 @@
         "description": "E-commerce store for jewelry and accessories. Developed the Home page and styled the Cart page using HTML, CSS, and JavaScript.",
         "technologies": ["React", "Node.js", "MongoDB"],
         "contribution": "Implemented product listing and payment integration. Won 3rd prize in the batch.",
-        "github": "https://github.com/adityarajbenn/lovoda-clone",
-        "demo": "https://lovoda-clone-demo.com",
+        "github": "https://github.com/PPnaruto/Project_Lovoda",
+        "demo": "https://comfy-speculoos-0dfe32.netlify.app/",
         "image": "./images/lovodaGIF.gif"
       }
     ],
