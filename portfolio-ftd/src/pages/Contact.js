@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Container, Typography, TextField, Button, Box, List, ListItem, ListItemIcon } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import emailjs from '@emailjs/browser';
 import portfolioData from '../data.json';
 
 const Contact = () => {
@@ -11,6 +12,8 @@ const Contact = () => {
     email: '',
     message: '',
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [feedback, setFeedback] = useState('');
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -22,8 +25,33 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form Submitted:', formData);
-    // Handle form submission (e.g., send to an API or email service)
+    setIsSubmitting(true);
+
+    emailjs
+      .send(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+        },
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        (response) => {
+          console.log('SUCCESS!', response.status, response.text);
+          setFeedback('Your message has been sent successfully!');
+          setFormData({ name: '', email: '', message: '' });
+        },
+        (error) => {
+          console.error('FAILED...', error);
+          setFeedback('Failed to send your message. Please try again later.');
+        }
+      )
+      .finally(() => {
+        setIsSubmitting(false);
+      });
   };
 
   return (
@@ -64,11 +92,18 @@ const Contact = () => {
             onChange={handleInputChange}
             sx={{ marginBottom: 2 }}
           />
-          <Button type="submit" variant="contained" color="primary" fullWidth>
-            Submit
+          <Button type="submit" variant="contained" color="primary" fullWidth disabled={isSubmitting}>
+            {isSubmitting ? 'Sending...' : 'Submit'}
           </Button>
         </Box>
       </form>
+
+      {/* Feedback Message */}
+      {feedback && (
+        <Typography variant="body1" sx={{ marginTop: 2, color: theme.palette.text.secondary }}>
+          {feedback}
+        </Typography>
+      )}
 
       <List sx={{ marginTop: 2, display: 'flex', justifyContent: 'center', gap: 3 }}>
         <ListItem
