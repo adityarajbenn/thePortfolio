@@ -1,30 +1,43 @@
-import React from 'react';
-import { Container, Typography, Grid, Box, Avatar, IconButton } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
-import { GitHub, LinkedIn, Email } from '@mui/icons-material'; // Import required icons
-import data from '../data.json';
+import React from "react";
+import {
+  Container,
+  Typography,
+  Grid,
+  Box,
+  Avatar,
+  IconButton,
+  Button,
+} from "@mui/material";
+import { useTheme } from "@mui/material/styles";
+import { GitHub, LinkedIn, Email } from "@mui/icons-material"; // Import required icons
+import data from "../data.json";
+import DownloadIcon from "@mui/icons-material/Download";
 
 const Home = () => {
   const theme = useTheme();
 
+  const handleResumeDownload = () => {
+    window.open("/Aditya_Raj_Benn_Resume.pdf", "_blank");
+  };
+
   return (
     <Box
       sx={{
-        minHeight: '100vh',
+        minHeight: "100vh",
         backgroundColor: theme.palette.background.default,
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
         py: 8,
       }}
     >
-      <Container maxWidth="md" sx={{ textAlign: 'center' }}>
+      <Container maxWidth="md" sx={{ textAlign: "center" }}>
         {/* Profile Image */}
         <Avatar
           alt={data.aboutMe.name}
           src={data.aboutMe.profileImage}
-          sx={{ width: 150, height: 150, margin: '0 auto', mb: 4 }}
+          sx={{ width: 150, height: 150, margin: "0 auto", mb: 4 }}
         />
 
         {/* Welcome Section */}
@@ -43,7 +56,7 @@ const Home = () => {
           sx={{
             marginBottom: 3,
             color: theme.palette.text.secondary,
-            fontStyle: 'italic',
+            fontStyle: "italic",
           }}
         >
           {data.aboutMe.title}
@@ -94,6 +107,23 @@ const Home = () => {
             </IconButton>
           </Grid>
         </Grid>
+        <a
+          href="/Aditya_Raj_Benn_Resume.pdf"
+          download="Aditya_Raj_Benn_Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: "none" }}
+        >
+          <Button
+            variant="contained"
+            color="primary"
+            onClick={handleResumeDownload}
+            startIcon={<DownloadIcon />}
+            sx={{ marginTop: 2 }}
+          >
+          Resume
+          </Button>
+        </a>
       </Container>
     </Box>
   );

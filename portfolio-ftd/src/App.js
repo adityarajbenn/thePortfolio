@@ -10,6 +10,7 @@ import Navbar from './components/Navbar';
 import baseTheme from './theme';
 import { CssBaseline, Box, Container } from '@mui/material';
 import Skills from './pages/Skills';
+import ResumeViewer from './pages/Resume';
 
 const App = () => {
   const [currentTheme, setCurrentTheme] = useState(baseTheme.primary);
@@ -57,6 +58,7 @@ const App = () => {
               <Route path="/projects" element={<Projects />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/skills" element={<Skills />} />
+              <Route path="/resume" element={<ResumeViewer />} />
             </Routes>
           </Container>
           <Footer />
