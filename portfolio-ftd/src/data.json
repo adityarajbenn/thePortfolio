@@ -61,7 +61,7 @@
         "description": "A platform showcasing music classes, offerings, and rules. Users can explore details about the courses and book personalized slots based on their preferences.",
         "technologies": ["React", "HTML", "CSS", "Javascript", "Netlify"],
         "contribution": "Made the complete website from scratch",
-        "github": "https://github.com/adityarajbenn/passionformusic",
+        "github": "https://github.com/adityarajbenn/PFMSchool",
         "demo": "https://passionformusic.netlify.app/",
         "image": "./images/pfmGIF.gif"
       },
