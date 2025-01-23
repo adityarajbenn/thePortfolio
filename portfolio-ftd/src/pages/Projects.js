@@ -13,12 +13,71 @@ import data from "../data.json";
 
 const Projects = () => {
   const theme = useTheme();
+  console.log(data.professionalExperience,'aslcksna')
 
   return (
     <Container
       maxWidth="lg"
       sx={{ marginTop: 6, marginBottom: 6, minHeight: "100vh" }}
     >
+      <Typography
+        variant="h4"
+        sx={{
+          marginBottom: 4,
+          textAlign: "center",
+          color: theme.palette.text.primary,
+        }}
+      >
+        My Professional Journey
+      </Typography>
+
+      {/* Professional Experience Section */}
+      <Box
+        sx={{
+          marginBottom: 6,
+          backgroundColor: theme.palette.background.paper,
+          padding: 4,
+          borderRadius: 2,
+          boxShadow: 3,
+        }}
+      >
+        <Typography
+          variant="h5"
+          sx={{
+            color: theme.palette.text.primary,
+            fontWeight: "bold",
+            marginBottom: 2,
+          }}
+        >
+          Professional Experience
+        </Typography>
+        {data.professionalExperience?.map((experience, index) => (
+        <Box key={index} sx={{ marginBottom: 4 }}>
+          <Typography
+            variant="h6"
+            sx={{ fontWeight: "bold", color: theme.palette.primary.main }}
+          >
+            {experience.position} | {experience.company}
+          </Typography>
+          <Typography
+            variant="body1"
+            sx={{ marginTop: 1, color: theme.palette.text.secondary }}
+          >
+            <strong>Duration:</strong> {experience.years}
+          </Typography>
+          <Typography
+            variant="body1"
+            sx={{ marginTop: 2, color: theme.palette.text.secondary, fontSize: '13.5px' }}
+          >
+            {experience.responsibilities.map((responsibility, idx) => (
+              <div key={idx}>- {responsibility}</div>
+            ))}
+          </Typography>
+        </Box>
+      ))}
+      </Box>
+
+      {/* Projects Section */}
       <Typography
         variant="h4"
         sx={{
@@ -42,7 +101,7 @@ const Projects = () => {
           <Box
             key={index}
             component={motion.div}
-            initial={{ opacity: 0, y: 30 }}  // Animate only opacity and vertical position
+            initial={{ opacity: 0, y: 30 }} // Animate only opacity and vertical position
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{
@@ -59,7 +118,7 @@ const Projects = () => {
               alignItems: "center",
               marginBottom: 6,
               width: "100%",
-              position: "relative",  // Ensure no layout disruption
+              position: "relative", // Ensure no layout disruption
             }}
           >
             {/* Project content */}
@@ -70,8 +129,8 @@ const Projects = () => {
                 marginRight: { xs: 0, md: 2 },
                 backgroundColor: theme.palette.background.paper,
                 boxShadow: 3,
-                opacity: 1,  // Ensure it's visible when animation completes
-                transition: "opacity 0.6s ease-out",  // Smooth opacity transition
+                opacity: 1, // Ensure it's visible when animation completes
+                transition: "opacity 0.6s ease-out", // Smooth opacity transition
               }}
             >
               <CardMedia

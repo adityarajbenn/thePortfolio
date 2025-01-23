@@ -30,10 +30,11 @@
         "location": "Jhansi, Uttar Pradesh",
         "years": "Feb 2023 - Aug 2024",
         "responsibilities": [
-          "Developed and maintained user-friendly frontends for internal and client-facing applications, including dynamic filters, interactive data sheets, and a CMS with role-based access.",
-          "Built an internal chat app to streamline bug reporting and resolution, ensuring seamless API integration and data consistency.",
-          "Contributed to backend tasks early on, transitioning into SEO optimization to improve site performance and core web vitals.",
-          "Played a key role in launching new projects with a focus on user experience and utilized tools like Bitbucket and VSCode for efficient project management."
+          "Designed and developed dynamic filters, interactive dashboards, and data sheets, which became essential components of the platform.",
+          "Engineered an internal chatbot to streamline communication and enhance workflows, significantly improving operational efficiency.",
+          "Spearheaded optimization efforts for core web vitals, including LCP, resulting in improved SEO performance and site visibility.",
+          "Played a vital role in launching and driving the success of new company projects with a strong emphasis on user-centric design and high performance.",
+          "Utilized tools like Bitbucket, VSCode, and React to deliver high-quality frontend solutions and ensure seamless project management."
         ]
       }
     ],

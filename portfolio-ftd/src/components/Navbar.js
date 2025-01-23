@@ -92,7 +92,7 @@ const Navbar = () => {
                 },
               }}
             >
-              Projects
+              Projects/Experience
             </Button>
             <Button
               component={NavLink}
@@ -183,7 +183,7 @@ const Navbar = () => {
             }}
             onClick={toggleDrawer}
           >
-            Projects
+            Projects/Experience
           </Button>
           <Button
             component={NavLink}
