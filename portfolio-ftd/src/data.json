@@ -2,7 +2,8 @@
     "aboutMe": {
       "name": "Aditya Raj Benn",
       "title": "Full Stack Developer",
-      "description": "A dedicated and skilled Full Stack Developer with over 3 years of hands-on experience, including professional and project-based work. Proficient in frontend technologies like React, JavaScript, Ant Design, and MUI, with initial experience in backend development and SEO optimization, focusing on core web vitals such as LCP. Known for strong communication skills and the ability to collaborate effectively with teams to deliver high-quality, user-centric solutions."
+      "description": "A dedicated and skilled Full Stack Developer with over 3 years of hands-on experience, including professional and project-based work. Proficient in frontend technologies like React, JavaScript, Ant Design, and MUI, with initial experience in backend development and SEO optimization, focusing on core web vitals such as LCP. Known for strong communication skills and the ability to collaborate effectively with teams to deliver high-quality, user-centric solutions.",
+      "profileImage": "./images/profileImage.jpg"
     },
     "contact": {
       "email": "rajbennaditya@gmail.com",

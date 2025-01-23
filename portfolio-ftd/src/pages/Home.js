@@ -3,7 +3,6 @@ import { Container, Typography, Grid, Box, Avatar, IconButton } from '@mui/mater
 import { useTheme } from '@mui/material/styles';
 import { GitHub, LinkedIn, Email } from '@mui/icons-material'; // Import required icons
 import data from '../data.json';
-import profileImage from '../images/profileImage.jpg';
 
 const Home = () => {
   const theme = useTheme();
@@ -24,7 +23,7 @@ const Home = () => {
         {/* Profile Image */}
         <Avatar
           alt={data.aboutMe.name}
-          src={profileImage} // Add `image` property to your data.json
+          src={data.aboutMe.profileImage}
           sx={{ width: 150, height: 150, margin: '0 auto', mb: 4 }}
         />
 
